@@ -13,7 +13,6 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-white/5">
-      <div className="pointer-events-none absolute inset-0 bg-grid bg-[size:24px_24px] opacity-30" />
       <div className="relative z-10 mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>

@@ -200,9 +200,8 @@ export default function Projects() {
   const list = tab === 'completed' ? completed : progress;
 
   return (
-    <section id="proyectos" className="relative mx-auto max-w-6xl overflow-hidden border-t border-white/15 px-6 py-20">
-      <div className="pointer-events-none absolute inset-0 bg-grid bg-[size:24px_24px] opacity-20" />
-      <div className="relative z-10">
+    <section id="proyectos" className="mx-auto max-w-6xl border-t border-white/15 px-6 py-20">
+      <div>
       <div className="mb-10 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">{es ? 'Proyectos' : 'Projects'}</p>

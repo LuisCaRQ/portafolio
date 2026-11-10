@@ -73,9 +73,8 @@ export default function Stack() {
   const es = lang === 'es';
 
   return (
-    <section id="stack" className="relative mx-auto max-w-6xl overflow-hidden border-t border-white/15 px-6 py-20">
-      <div className="pointer-events-none absolute inset-0 bg-grid bg-[size:24px_24px] opacity-20" />
-      <div className="relative z-10">
+    <section id="stack" className="mx-auto max-w-6xl border-t border-white/15 px-6 py-20">
+      <div>
       <div className="mb-10">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Stack</p>
         <h2 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
