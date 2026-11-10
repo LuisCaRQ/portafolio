@@ -17,13 +17,24 @@ import {
   SiJira,
   SiLinux,
 } from 'react-icons/si';
-import { Code2, Server, Database, Wrench, Layers } from 'lucide-react';
+import { Server, Database, Wrench, Layers } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 type Tech = { name: string; icon: React.ReactNode };
 type Category = { nameEs: string; nameEn: string; icon: React.ReactNode; items: Tech[] };
 
 const categories: Category[] = [
+  {
+    nameEs: 'Frontend',
+    nameEn: 'Frontend',
+    icon: <Layers className="h-4 w-4" />,
+    items: [
+      { name: 'React', icon: <SiReact className="h-7 w-7" /> },
+      { name: 'JavaScript', icon: <SiJavascript className="h-7 w-7" /> },
+      { name: 'HTML', icon: <SiHtml5 className="h-7 w-7" /> },
+      { name: 'CSS', icon: <SiCss className="h-7 w-7" /> },
+    ],
+  },
   {
     nameEs: 'Backend',
     nameEn: 'Backend',
@@ -33,13 +44,8 @@ const categories: Category[] = [
       { name: 'Express.js', icon: <SiExpress className="h-7 w-7" /> },
       { name: 'Flask', icon: <SiFlask className="h-7 w-7" /> },
       { name: 'RESTful API', icon: <Server className="h-7 w-7" /> },
-    ],
-  },
-  {
-    nameEs: 'Bases de datos',
-    nameEn: 'Databases',
-    icon: <Database className="h-4 w-4" />,
-    items: [
+      { name: 'Python', icon: <SiPython className="h-7 w-7" /> },
+      { name: 'Java', icon: <SiOpenjdk className="h-7 w-7" /> },
       { name: 'PostgreSQL', icon: <SiPostgresql className="h-7 w-7" /> },
       { name: 'MongoDB', icon: <SiMongodb className="h-7 w-7" /> },
       { name: 'Oracle', icon: <Database className="h-7 w-7" /> },
@@ -48,20 +54,8 @@ const categories: Category[] = [
     ],
   },
   {
-    nameEs: 'Lenguajes',
-    nameEn: 'Languages',
-    icon: <Code2 className="h-4 w-4" />,
-    items: [
-      { name: 'JavaScript', icon: <SiJavascript className="h-7 w-7" /> },
-      { name: 'Python', icon: <SiPython className="h-7 w-7" /> },
-      { name: 'Java', icon: <SiOpenjdk className="h-7 w-7" /> },
-      { name: 'HTML', icon: <SiHtml5 className="h-7 w-7" /> },
-      { name: 'CSS', icon: <SiCss className="h-7 w-7" /> },
-    ],
-  },
-  {
-    nameEs: 'Herramientas',
-    nameEn: 'Tools',
+    nameEs: 'Otras tecnologías',
+    nameEn: 'Other technologies',
     icon: <Wrench className="h-4 w-4" />,
     items: [
       { name: 'Git', icon: <SiGit className="h-7 w-7" /> },
@@ -70,14 +64,6 @@ const categories: Category[] = [
       { name: 'Docker', icon: <SiDocker className="h-7 w-7" /> },
       { name: 'Jira', icon: <SiJira className="h-7 w-7" /> },
       { name: 'Linux', icon: <SiLinux className="h-7 w-7" /> },
-    ],
-  },
-  {
-    nameEs: 'Frontend',
-    nameEn: 'Frontend',
-    icon: <Layers className="h-4 w-4" />,
-    items: [
-      { name: 'React', icon: <SiReact className="h-7 w-7" /> },
     ],
   },
 ];
@@ -91,7 +77,7 @@ export default function Stack() {
       <div className="mb-10">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">Stack</p>
         <h2 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
-          {es ? 'Tecnologías que domino' : 'Technologies I work with'}
+          {es ? 'Tecnologías con las que trabajo' : 'Technologies I work with'}
         </h2>
       </div>
 
