@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-6 pb-20 pt-16 md:pt-24">
       <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl animate-fade-in-up [animation-delay:80ms]">
-        {es ? 'Hola, soy ' : "Hi, I'm "}
+        {es ? 'Hola Mundo, soy ' : 'Hello World, I am '}
         <span className="whitespace-nowrap bg-gradient-to-r from-accent via-accent-3 to-accent-2 bg-clip-text text-transparent">
           Luis Rodríguez
         </span>
