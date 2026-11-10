@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Stack from './components/Stack';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { ChevronUp } from 'lucide-react';
 
 export default function App() {
   return (
@@ -24,6 +25,15 @@ export default function App() {
           <Stack />
           <Contact />
         </main>
+        <div className="mx-auto flex max-w-6xl justify-center pb-10">
+          <a
+            href="#inicio"
+            aria-label="Back to top"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-400 transition hover:border-accent/40 hover:text-accent"
+          >
+            <ChevronUp className="h-5 w-5" />
+          </a>
+        </div>
         <Footer />
       </div>
     </div>
