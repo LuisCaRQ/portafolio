@@ -1,4 +1,4 @@
-import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, ChevronDown, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function Hero() {
@@ -53,6 +53,14 @@ export default function Hero() {
           <Mail className="h-5 w-5" />
         </a>
       </div>
+
+      <a
+        href="#sobre-mi"
+        aria-label={es ? 'Desplazarse hacia abajo' : 'Scroll down'}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 transition hover:text-accent animate-bounce"
+      >
+        <ChevronDown className="h-6 w-6" />
+      </a>
     </section>
   );
 }
