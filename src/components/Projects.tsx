@@ -24,8 +24,8 @@ const completedES: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript'],
     status: 'Completado',
     statusColor: 'text-accent-3',
-    github: 'https://github.com/LuisCaRQ/crm-system',
-    live: 'https://crm.demo',
+    github: 'https://github.com/LuisCaRQ/CRM',
+    live: 'None',
     highlights: [
       'API RESTful con Node.js y Express para gestión de usuarios y prospectos',
       'Esquemas de MongoDB para etapas dinámicas del proceso de ventas',
@@ -59,7 +59,7 @@ const completedEN: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JavaScript'],
     status: 'Completed',
     statusColor: 'text-accent-3',
-    github: 'https://github.com/LuisCaRQ/crm-system',
+    github: 'https://github.com/LuisCaRQ/CRM',
     live: 'https://crm.demo',
     highlights: [
       'RESTful API with Node.js and Express for user and lead management',
