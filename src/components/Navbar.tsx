@@ -41,12 +41,6 @@ export default function Navbar() {
           >
             {lang === 'es' ? 'EN' : 'ES'}
           </button>
-          <a
-            href="#contacto"
-            className="hidden rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-white transition hover:border-accent/40 hover:bg-accent/10 hover:text-accent md:inline-flex"
-          >
-            {t.contact}
-          </a>
           <button
             onClick={() => setOpen((v) => !v)}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-400 transition hover:border-accent/40 hover:text-accent md:hidden"
