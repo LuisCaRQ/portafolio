@@ -22,7 +22,7 @@ export default function Navbar() {
           <a href="#stack" className="transition-colors hover:text-white">{t.stack}</a>
           <a href="#contacto" className="transition-colors hover:text-white">{t.contact}</a>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3">
           <button
             onClick={toggleLang}
             className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-white transition hover:border-accent/40 hover:bg-accent/10 hover:text-accent"
