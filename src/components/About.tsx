@@ -5,7 +5,9 @@ export default function About() {
   const es = lang === 'es';
 
   return (
-    <section id="sobre-mi" className="mx-auto max-w-6xl border-t border-white/15 px-6 py-20">
+    <section id="sobre-mi" className="relative mx-auto max-w-6xl overflow-hidden border-t border-white/15 px-6 py-20">
+      <div className="pointer-events-none absolute inset-0 bg-grid bg-[size:24px_24px] opacity-20" />
+      <div className="relative z-10">
       <div className="mb-10">
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">{es ? 'Sobre mí' : 'About me'}</p>
         <h2 className="mt-2 font-display text-3xl font-bold text-white md:text-4xl">
@@ -38,6 +40,7 @@ export default function About() {
               : 'Experienced working with Git/GitHub, Postman, Jira and Agile/Scrum environments, collaborating with development teams to build and maintain web applications. Strong interest in backend development, API development and database engineering.'}
           </p>
         </div>
+      </div>
       </div>
     </section>
   );
