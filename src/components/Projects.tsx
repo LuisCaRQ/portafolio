@@ -165,7 +165,7 @@ function ProjectCard({ project, lang }: { project: Project; lang: 'es' | 'en' })
           ))}
         </div>
 
-        <div className="mt-auto flex items-center gap-4">
+        <div className="mt-auto flex items-center justify-between gap-4">
           <a
             href={project.github}
             target="_blank"

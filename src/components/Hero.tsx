@@ -54,13 +54,15 @@ export default function Hero() {
         </a>
       </div>
 
-      <a
-        href="#sobre-mi"
-        aria-label={es ? 'Desplazarse hacia abajo' : 'Scroll down'}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-slate-500 transition hover:text-accent animate-bounce"
-      >
-        <ChevronDown className="h-6 w-6" />
-      </a>
+      <div className="mt-12 flex justify-center">
+        <a
+          href="#sobre-mi"
+          aria-label={es ? 'Desplazarse hacia abajo' : 'Scroll down'}
+          className="text-slate-500 transition hover:text-accent animate-bounce"
+        >
+          <ChevronDown className="h-6 w-6" />
+        </a>
+      </div>
     </section>
   );
 }
